@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Tabla dinamica con Supabase</h1>
+        <div class="tabla-contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>create_at</th>
+                        <th>nombre</th>
+                        <th>puesto</th>
+                        <th>sueldo</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-trabajadores"></tbody>
+            </table>
+        </div>
+        <p id="mensaje"></p>
+        <p id="estado-vacio" class="estado-vacio" hidden>No hay productos registrados</p>
+        <button id="boton-recargar"onclick="obtenerTrabajadores()">Actualizar</button>
+    </main>
+</body>
+</html>

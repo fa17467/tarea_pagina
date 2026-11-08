@@ -1,0 +1,47 @@
+h1{
+    font-family: "Grechen Fuemen", cursive;
+    text-align: center;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+
+.mensaje.error {
+    color: red;
+}
+
+.mensaje.exito {
+    color: green;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    border: 2px solid rgb(223, 146, 223); 
+    margin: 20px auto;
+    padding: 10px;
+    font-family:"Merienda", cursive;
+}
+
+th, td {
+    padding: 12px 10px;
+    border-bottom: 1px solid rgb(232, 183, 90);
+    border: 1px solid #d1c4e9;
+}
+
+th {
+    background-color: #f3e5f5;
+    color: rgb(220, 152, 73);
+}
+
+tr{
+    transition: 1s;
+}
+tr:hover{
+    background-color: pink; 
+
+}
